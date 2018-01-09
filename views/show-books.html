@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+       <button class="filterRow btn btn-default btn-block" ng-click="toggleLetter=!toggleLetter">Sort By Name</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+       <div class="filterRow input-group btn-block">
+         <span class="input-group-addon">Author:</span>
+         <input type="text" class="form-control" ng-model="authorFilter" placeholder="Search By Author Name">
+       </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-sm-12 bookdiv">
+      <h1>BOOKS</h1>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Show Blocks -->
+
+<div class="bookdiv text-center" ng-repeat="book in mainPage.books | filter : authorFilter | orderBy : !toggleLetter ? 'name' : '-name'">
+<!-- replace to fetch particular id from url -->
+  <a ng-href="#!/particular-book/{{ book.url.replace('https://anapioficeandfire.com/api/books/','') }}">
+    <div>
+      <h3>{{book.name}}</h3>
+      <span ng-repeat="author in book.authors"><h5>- {{author}}</h5></span>
+    </div>
+  </a>
+</div>
+
+</div>

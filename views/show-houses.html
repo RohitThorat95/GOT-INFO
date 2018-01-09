@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <button class="filterRow btn btn-default btn-block" ng-click="toggleHouse=!toggleHouse">Sort By Name</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="filterRow input-group btn-block">
+        <span class="input-group-addon">House Name:</span>
+        <input type="text" class="form-control" ng-model="houseFilter" placeholder="Search By House Name">
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-sm-12 housediv">
+      <h1>HOUSES</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="housediv text-center" ng-repeat="house in mainPage.houses | filter : houseFilter | orderBy : !toggleHouse ? 'name' : '-name'">
+    <a ng-href="#!/particular-house/{{ house.url.replace('https://anapioficeandfire.com/api/houses/' ,'') }}">
+      <div>
+        <h3>House Name : <strong>" {{house.name}} "</strong><span ng-show="{{house.name.length < 1}}">"Name Not Available"</span></h3>
+        <h4>Region : <strong>" {{house.region }}"</strong><span ng-show="{{house.region.length < 1}}">"Region Name Not Available"</span></h4>
+      </div>
+    </a>
+  </div>
+
+
+</div>

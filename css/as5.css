@@ -1,0 +1,123 @@
+body{
+  font-family: 'Bellefair', serif;
+
+}
+.singlebook{
+  background-color: white;
+  text-align: center;
+  -webkit-box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  -moz-box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+
+}
+.bookhead {
+  margin: 20px;
+}
+
+
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+section {
+  padding: 50px 0;
+  margin: 0 auto;
+  background-image: url(../img/section-bg.jpg);
+}
+#mainNav{
+  background-color: black;
+}
+hr {
+  background-color: white;
+}
+header {
+  padding: 100px 0 100px;
+  background-image: url(../img/got.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.main-head{
+  font-size: 30px;
+}
+.lead{
+  font-size: 15px;
+}
+
+.mainbtn {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  -moz-box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  cursor: pointer;;
+}
+
+.filterRow {
+  box-shadow: 7px 4px 41px -6px rgba(0,0,0,0.76);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.bookdiv{
+  margin: 15px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  box-shadow: 7px 7px 20px -6px rgba(0,0,0,0.76);
+
+
+}
+.housediv{
+  margin: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  background-color: rgba(33, 136, 56,0.5);
+  box-shadow: 10px 10px 20px -6px rgba(0,0,0,0.76);
+  color: white;
+}
+
+.chardiv{
+  margin: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(237, 67, 55,0.5);
+  box-shadow: 10px 10px 20px -6px rgba(0,0,0,0.76);
+  color: white;
+}
+
+
+
+@media (min-width:325px){
+  header{
+    padding: 120px 0 100px;
+  }
+  .main-head{
+    font-size: 30px;
+  }
+  .lead{
+    font-size: 20px;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  header {
+    padding: 130px 0 100px;
+    }
+    .main-head{
+      font-size: 60px;
+    }
+    .lead{
+      font-size: 30px;
+    }
+
+}

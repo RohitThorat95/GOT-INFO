@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <button class="filterRow btn btn-default btn-block" ng-click="toggleChar=!toggleChar">Sort By Name</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="filterRow input-group btn-block">
+        <span class="input-group-addon">Character Name:</span>
+        <input type="text" class="form-control" ng-model="charFilter" placeholder="Search By Character's Name">
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-sm-12 chardiv">
+      <h1>CHARACTERS</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="chardiv text-center" ng-repeat="char in mainPage.characters | filter : charFilter | orderBy : !toggleChar ? 'name' : '-name'">
+    <a ng-href="#!/particular-char/{{ char.url.replace('https://anapioficeandfire.com/api/characters/','') }}">
+    <div>
+      <h3>Name: {{char.name}} <span ng-show = "{{char.name.length < 1 }}" >"No Data Available"</span></h3>
+      <p>Gender: {{char.gender}} <span ng-show = "{{char.gender.length < 1 }}" >"No Data Available"</span></p>
+    </div>
+    </a>
+  </div>
+
+
+</div>

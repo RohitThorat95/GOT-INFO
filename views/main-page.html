@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <button class=" mainbtn btn btn-success btn-block text-uppercase" ng-click="mainPage.showBooks()"><i class="fa fa-book" aria-hidden="true"></i> Books</button>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <button class=" mainbtn btn btn-success btn-block text-uppercase" ng-click="mainPage.showHouses()"><i class="fa fa-home" aria-hidden="true"></i> Houses</button>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <button class="mainbtn btn btn-success btn-block text-uppercase" ng-click="mainPage.showCharacters()"><i class="fa fa-users" aria-hidden="true"></i> Characters</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="books" ng-show="mainPage.booksVisible">
+    <!-- Directive Books -->
+    <show-books></show-books>
+  </div>
+  <div class="houses" ng-show="mainPage.houseVisible">
+      <!-- Directive Houses -->
+    <show-houses></show-houses>
+  </div>
+  <div class="characters" ng-show="mainPage.characterVisible">
+    <!-- Directive Chars -->
+    <show-characters></show-characters>
+  </div>
+
+</div>
