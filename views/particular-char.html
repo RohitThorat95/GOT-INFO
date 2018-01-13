@@ -12,47 +12,80 @@
         </tr>
         <tr>
           <td class="table-info"><strong>GENDER :</strong></td>
-          <td class="table-success">{{char.char.gender}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.gender.length > 0">{{char.char.gender}}</span>
+            <span ng-show="char.char.gender.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>CULTURE :</strong></td>
-          <td class="table-success">{{char.char.culture}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.culture.length > 0">{{char.char.culture}}</span>
+            <span ng-show="char.char.culture.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>BORN :</strong></td>
-          <td class="table-success">{{char.char.born}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.born.length > 0">{{char.char.born}}</span>
+            <span ng-show="char.char.born.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>DIED :</strong></td>
-          <td class="table-success">{{char.char.died}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.died.length > 0">{{char.char.died}}</span>
+            <span ng-show="char.char.died.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>TITLES :</strong></td>
-          <td class="table-success">{{char.char.titles}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.titles.length > 0">{{char.char.titles}}</span>
+            <span ng-show="char.char.titles.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>ALIASES :</strong></td>
-          <td class="table-success">{{char.char.aliases}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.aliases.length > 0">{{char.char.aliases}}</span>
+            <span ng-show="char.char.aliases.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>FATHER :</strong></td>
-          <td class="table-success">{{char.char.father}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.father.length > 0">{{char.char.father}}</span>
+            <span ng-show="char.char.father.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>MOTHER :</strong></td>
-          <td class="table-success">{{char.char.mother}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.mother.length > 0">{{char.char.mother}}</span>
+            <span ng-show="char.char.mother.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>SPOUSE :</strong></td>
-          <td class="table-success">{{char.char.spouse}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.spouse.length > 0">{{char.char.spouse}}</span>
+            <span ng-show="char.char.spouse.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>PLAYED BY :</strong></td>
-          <td class="table-success">{{char.char.playedBy}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.playedBy.length > 0">{{char.char.playedBy}}</span>
+            <span ng-show="char.char.playedBy.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>TV SERIES :</strong></td>
-          <td class="table-success">{{char.char.tvSeries}}</td>
+          <td class="table-success">
+            <span ng-show="char.char.tvSeries.length > 0">{{char.char.tvSeries}}</span>
+            <span ng-show="char.char.tvSeries.length < 1">Data Not Available</span>
+          </td>
         </tr>
 
       </tbody>

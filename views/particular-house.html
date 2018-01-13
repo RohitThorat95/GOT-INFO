@@ -12,47 +12,80 @@
         </tr>
         <tr>
           <td class="table-info"><strong>REGION :</strong></td>
-          <td class="table-success">{{house.house.region}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.region.length > 0">{{house.house.region}}</span>
+            <span ng-show="house.house.region.length < 1"> Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>COAT OF ARMS :</strong></td>
-          <td class="table-success">{{house.house.coatOfArms}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.coatOfArms.length > 0">{{house.house.coatOfArms}}</span>
+            <span ng-show="house.house.coatOfArms.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>TITLES :</strong></td>
-          <td class="table-success">{{house.house.titles}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.titles.length > 0">{{house.house.titles}}</span>
+            <span ng-show="house.house.titles.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>CURRENT LORD :</strong></td>
-          <td class="table-success">{{house.house.currentLord}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.currentLord.length > 0">{{house.house.currentLord}}</span>
+            <span ng-show="house.house.currentLord.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>HEIR :</strong></td>
-          <td class="table-success">{{house.house.heir}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.heir.length > 0">{{house.house.heir}}</span>
+            <span ng-show="house.house.heir.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>OVERLORD :</strong></td>
-          <td class="table-success">{{house.house.overlord}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.overlord.length > 0">{{house.house.overlord}}</span>
+            <span ng-show="house.house.overlord.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>FOUNDED :</strong></td>
-          <td class="table-success">{{house.house.founded}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.founded.length > 0">{{house.house.founded}}</span>
+            <span ng-show="house.house.founded.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>FOUNDER :</strong></td>
-          <td class="table-success">{{house.house.founder}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.founder.length > 0">{{house.house.founder}}</span>
+            <span ng-show="house.house.founder.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>DIED OUT :</strong></td>
-          <td class="table-success">{{house.house.diedOut}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.diedOut.length > 0">{{house.house.diedOut}}</span>
+            <span ng-show="house.house.diedOut.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>ANCESTRAL WEAPONS :</strong></td>
-          <td class="table-success">{{house.house.ancestralWeapons}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.ancestralWeapons.length > 0">{{house.house.ancestralWeapons}}</span>
+            <span ng-show="house.house.ancestralWeapons.length < 1">Data Not Available</span>
+          </td>
         </tr>
         <tr>
           <td class="table-info"><strong>CADET BRANCHES :</strong></td>
-          <td class="table-success">{{house.house.branches}}</td>
+          <td class="table-success">
+            <span ng-show="house.house.branches.length > 0">{{house.house.branches}}</span>
+            <span ng-show="house.house.branches.length < 1">Data Not Available</span>
+          </td>
         </tr>
 
       </tbody>
